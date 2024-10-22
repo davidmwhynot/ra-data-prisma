@@ -209,7 +209,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/jay/Work/Panter/Projekte/ra-data-prisma/packages/dataprovider/.prisma",
+      "value": "F:\\ra-data-prisma\\packages\\dataprovider\\.prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -222,7 +222,7 @@ const config = {
   "relativeEnvPaths": {
     "rootEnvPath": null
   },
-  "relativePath": "../test-data",
+  "relativePath": "..\\test-data",
   "clientVersion": "3.15.2",
   "engineVersion": "461d6a05159055555eb7dfb337c9fb271cbd4d7e",
   "datasourceNames": [
@@ -247,7 +247,7 @@ const PrismaClient = getPrismaClient(config)
 exports.PrismaClient = PrismaClient
 Object.assign(exports, Prisma)
 
-path.join(__dirname, "libquery_engine-darwin-arm64.dylib.node");
-path.join(process.cwd(), ".prisma/libquery_engine-darwin-arm64.dylib.node")
+path.join(__dirname, "query_engine-windows.dll.node");
+path.join(process.cwd(), ".prisma\\query_engine-windows.dll.node")
 path.join(__dirname, "schema.prisma");
-path.join(process.cwd(), ".prisma/schema.prisma")
+path.join(process.cwd(), ".prisma\\schema.prisma")

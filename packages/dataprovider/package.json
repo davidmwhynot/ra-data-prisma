@@ -1,8 +1,11 @@
 {
-  "name": "@ra-data-prisma/dataprovider",
+  "name": "@davidmwhynot/ra-data-prisma-dataprovider",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Marco Wettstein <maw@panter.ch>",
+  "contributors": [
+    "David Whynot <davidmwhynot@gmail.com>"
+  ],
   "homepage": "",
   "license": "ISC",
   "main": "./lib/index.js",
@@ -25,7 +28,7 @@
     "build:cjs": "rimraf ./lib && tsc --project tsconfig.json --outDir lib --module commonjs",
     "build:es": "rimraf ./lib-es && tsc --project tsconfig.json",
     "generate:test": "yarn generate:test:prisma && yarn generate:test:nexus",
-    "generate:test:prisma": "SKIP_PRISMA_VERSION_CHECK=1 yarn prisma generate --schema test-data/datamodel.prisma",
+    "generate:test:prisma": "cross-env SKIP_PRISMA_VERSION_CHECK=1 yarn prisma generate --schema test-data/datamodel.prisma",
     "generate:test:nexus": "yarn ts-node --project ../../tsconfig-test.json  --transpile-only test-data/buildTestSchemaNexus.ts"
   },
   "devDependencies": {

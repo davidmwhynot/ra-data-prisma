@@ -1,8 +1,11 @@
 {
-  "name": "@ra-data-prisma/backend",
+  "name": "@davidmwhynot/ra-data-prisma-backend",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Marco Wettstein <maw@panter.ch>",
+  "contributors": [
+    "David Whynot <davidmwhynot@gmail.com>"
+  ],
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
